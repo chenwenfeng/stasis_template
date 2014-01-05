@@ -2,7 +2,10 @@
 
 #install stasis
 gem install bundler
-bundle install
+gem install stasis
+gem install haml
+gem install less
+gem install therubyracer
 
 #dev
 compile => $ stasis (public folder)
