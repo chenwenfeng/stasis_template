@@ -1,2 +1,17 @@
+-# coding: utf-8
 %html
-  %body= yield
+  %head
+    %meta(charset="utf-8")
+    %title=@title
+    %meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    %link(rel="stylesheet" href="/css/reset.css")
+    %link(rel="stylesheet" href="/css/layout.css")
+    %script(type="text/javascript")
+      document.oncontextmenu=function(e){return false;}
+
+  %body(style="-moz-user-select:none;-webkit-user-select:none;user-select:none;" onselectstart="return false")
+    #header
+      header
+    #main= yield
+    #footer
+      footer

@@ -1,0 +1,11 @@
+#see http://stasis.me
+
+#install stasis
+gem install bundler
+bundle install
+
+#dev
+compile => $ stasis (public folder)
+deploy => stasis -d 3000(port)
+
+go localhost:3000
